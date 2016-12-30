@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  display: inline-block;
+  height: 250px;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+.select a {
+  height: 32px;
+  display: block;
+}
+
+.select {
+  width: 200px;
+  position: relative;
+}
+
+.select {
+  top: calc(100% + 2px);
+  left: 0;
+  display: block;
+  background-color: #eee;
+}
+
+.select:hover > .dropdown {
+  display: inline-block;
+  background-color: #aaa;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+
+.dropdown.top {
+  top: 0;
+  transform: translateY(-100%);
+}
